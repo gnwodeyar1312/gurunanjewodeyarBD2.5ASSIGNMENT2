@@ -168,6 +168,10 @@ let stocks = [
   },
 ];
 
+app.get("/", (req, res) => {
+  res.send("Welcome to Stock Page");
+});
+
 app.get("/stocks", (req, res) => {
   res.json({ stocks });
 });
